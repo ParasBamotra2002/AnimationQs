@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        /* body{
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        .img1{
+            width: 60rem;
+            aspect-ratio: 1;
+            background-image: url(images/img1.jpg);
+            animation: changeimage 20s linear infinite;
+            
+            
+        }
+        @keyframes changeimage {
+            0%{
+                background-image: url(images/img1.jpg);
+            }
+            20%{
+                background-image: url(images/img2.jpg);
+            }
+            40%{
+                background-image: url(images/img3.jpg);
+            }
+            60%{
+                background-image: url(images/img2.jpg);
+            }
+            80%{
+                background-image: url(images/img4.jpg);
+            }
+            100%{
+                background-image: url(images/img2.jpg);
+            }
+        } */
+
+        /* body{
+            height: 90vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+        .cradle{
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            background-color: transparent;
+            height: 50rem;
+            width: 50rem;
+            border-top: 1rem solid purple;
+            margin-top: 5rem;
+        }
+        .cradle div{
+            height: 20rem;
+            width: 0.5rem;
+            background-color: purple;
+            position: relative;
+        }
+        .cradle div::before{
+            content: "";
+            width: 6rem;
+            height: 6rem;
+            background-color: purple;
+            position: absolute;
+            border-radius: 50%;
+            bottom: -30%;
+            left: -2.5rem;
+
+        }
+        .cradle div:first-child{
+            animation: leftswing 2s linear infinite;
+            transform-origin: top;
+        }
+        @keyframes leftswing{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(30deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }100%{
+                transform: rotate(0deg);
+            }
+
+        }
+
+        .cradle div:last-child{
+            animation: rightswing 2s linear infinite 1s;
+            transform-origin: top;
+        }
+        @keyframes rightswing{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(-30deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }100%{
+                transform: rotate(0deg);
+            }
+
+        } */
+
+        /* body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+
+        }
+        .loader{
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;
+            background-color: purple;
+            position: relative;
+            animation: rotateround 2s linear infinite;
+        }
+        .loader::before{
+            content: "";
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            z-index: 1;
+        }
+        .loader::after{
+            content: "";
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            background-color: purple;
+            position: absolute;
+            z-index: 100;
+            top: -44px;
+            left: 90px;
+            box-shadow: 0 0 80px  purple;
+            filter: blur(1.5rem);
+        }
+        @keyframes rotateround {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(-90deg);
+            }
+            50%{
+                transform: rotate(-180deg);
+            }
+            75%{
+                transform: rotate(-270deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+            }
+            
+        } */
+
+        /* body{
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+        .text{
+            font-size: 96px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 800;
+            color: rgb(19, 32, 217);
+            width: 55rem;
+            height: 55rem;
+            position: relative;
+        }
+        .text::before{
+            content: "SUBSCRIBE...";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: yellow;
+            border-right: 2px solid yellow;
+            width: 50%;
+            overflow: hidden;
+            animation: textreveal 2s linear infinite;
+        }
+        @keyframes textreveal {
+            0%{
+                width: 0%;
+            }50%{
+                width: 100%;
+            }100%{
+                width: 0%;
+            }
+        } */
+        body{
+            background-color: rgb(247, 222, 190);
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            
+        }
+        .container{
+            margin-top: 10rem;
+            width: 60rem;
+            aspect-ratio: 1;
+            border-radius: 5rem;
+            background-color: rgb(252, 203, 130);
+            position: relative;
+            animation: boxmove1 6s ease-in-out infinite;
+        }
+        @keyframes boxmove1 {
+            0%{
+                background-color: rgb(252, 203, 130);
+            }
+            50%{
+               background-color: rgb(57, 51, 51);
+            }
+            
+            100%{
+                background-color: rgb(252, 203, 130);
+            }
+        }
+        .sun{
+            content: "";
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            background-color: orangered;
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            overflow: hidden;
+           
+        }
+        .sun::after{
+            content: "";
+            width: 19rem;
+            height: 19rem;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            left: 2.6%;
+            top: 2.6%;
+            animation: boxmove 6s  ease-in-out infinite;
+            
+
+        }
+        @keyframes boxmove {
+            0%{
+                transform: translateX(100%);
+            }
+           
+            50%{
+                transform: translateX(0%);
+                
+            }
+            
+            100%{
+                transform: translateX(-110%);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="img1">
+    </div> -->
+
+    <!-- <div class="cradle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div> -->
+    <!-- <div class="loader"></div> -->
+    <!-- <div class="text">SUBSCRIBE...</div> -->
+    <div class="container">
+        <div class="sun"></div>
+    </div>
+</body>
+</html>
